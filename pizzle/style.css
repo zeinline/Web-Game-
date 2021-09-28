@@ -1,0 +1,37 @@
+#game {
+  background: #83b849;
+  display: block;
+  margin: 0 auto;
+  padding: 10px 0 10px 0;
+}
+#game .startings {
+  text-align: center;
+  font-size: 30px;
+}
+#game .startings input {
+  font-size: 30px;
+}
+#game .startings #ground {
+  width: 90%;
+}
+#game .startings button {
+  font-size: 50px;
+}
+
+#game #canvas {
+  margin: 0 auto;
+}
+#game #buttons #bt_back {
+  float: left;
+  font-size: 50px;
+  height: 70px;
+  width: 270px;
+  margin-top: 10px;
+}
+#game #buttons #bt_compare {
+  float: right;
+  font-size: 50px;
+  height: 70px;
+  width: 270px;
+  margin-top: 10px;
+}

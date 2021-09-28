@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head id='head'>
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+	<title>Random Loot</title>
+	<link rel='stylesheet' type='text/css' href='style.css'>
+</head>
+<body id='body'>
+	<div id='room_open' style='display: none;'>
+		<button id='title_chest' type='button' onclick='room_choose();'>сокровище</button>
+
+		<div id='background_chest' style='background: url();'>
+			<p><img id='image_chest' src=''></img></p>
+			<div id='open_chest'>
+				<button id='bt_open_chest' type='button' onclick='open_chest();'></button>
+			</div>
+		</div>
+
+		<div id='inventory'><p id='inventory_header'>инвентарь</p></div>
+	</div>
+
+
+	<div id='room_choose' style='display: block;'>
+	</div>
+
+
+	<div id='room_create' style='display: none;'>
+		<div class='settings'>
+			<button id='save' type='button' onclick='save_setting();'>сохранить</button>
+			<button id='menu' type='button' onclick='room_choose();'>меню</button>
+			<button id='delete' type='button' onclick='delete_chest();'>удалить</button>
+		</div>
+
+		<input id='field_title' type='text' value='' onblur='field_title();'></input>
+
+		<div id='create_background' style='background: url();'>
+			<p><img id='create_image' src=''></img></p>
+			<input id='field_image' type='text' value='' onblur='field_image();'></input>
+		</div>
+		<input id='field_background' type='text' value='' onblur='field_background();'></input>
+
+		<div id='create_inventory'>
+		</div>
+	</div>
+
+	<script type='text/javascript' src='script.js'></script>
+</body>
+</html>

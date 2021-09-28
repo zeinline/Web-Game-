@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head id='head'>
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+	<title>pizzle</title>
+	<link rel='stylesheet' type='text/css' href='style.css'>
+</head>
+<body id='body'>
+	<div id='game'>
+		<div id='starting' class='startings' style='display: block;'>
+			путь к файлу (с устройства или браузера) <br>
+			<input id='ground' type='text' value='img/ground.jpg'><br><br>
+			кол-во пикселей в изображении по горизонтали и вертикали <br>
+			<input id='pix_x' type='number' value='735'>
+			<input id='pix_y' type='number' value='733'><br><br>
+			кол-во кусочков по горизонтали и вертикали <br>
+			<input id='blocks_x' type='number' value='5'>
+			<input id='blocks_y' type='number' value='5'><br><br>
+			<button type='button' onclick='start();'>играть</button>
+		</div>
+		<canvas id='canvas' style='display: none;'></canvas>
+		<div id='buttons' style='display: none;'>
+			<div id='compare' style='display: none; background: url(""); height: 0; width: 0; margin: 0 auto;'></div>
+			<button id='bt_back' type='button' onclick='back();'>назад</button>
+			<button id='bt_compare' type='button' onclick='compare();'>показать</button>
+		</div>
+	</div>
+	<script type='text/javascript' src='script.js'></script>
+</body>
+</html>
